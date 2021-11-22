@@ -12,3 +12,6 @@ class Books(models.Model):
     publishing_company = models.CharField(max_length=255)
     create_at = models.DateField(auto_now_add=True)
 
+    def __str__(self):
+        return f'{self.title} - {self.author} - {self.release_year}'
+
