@@ -56,7 +56,7 @@ Para criar as tabelas no banco de dados (Por enquanto *Sqlite3*) executamos o co
 # Criando os modelos e API
 No arquivo **./biblioteca/settings.py** precisamos indicar ao nosso projeto library sobre a existência do app books e também o uso do rest framework. Portanto adicionamos as seguintes linhas sublinhadas
 
-![imagem das linhas](img/installed_apps.png)
+![imagem das linhas](biblioteca/img/installed_apps.png)
 
 
 Agora em **./biblioteca/books/models.py** iremos criar nosso modelo com os atributos que um livro deve ter.
@@ -135,7 +135,7 @@ Como criamos um modelo novo lá em cima, precisamos avisar e em seguida migrar t
 ```
 Agora você pode usar um programa como <a href="https://insomnia.rest/">Insomnia</a> para testar os métodos http no link do seu servidor local. 🥰
 
-![insomnia](img/insomnia.png)
+![insomnia](biblioteca/img/insomnia.png)
 
 >O python facilita bastante coisas para a gente, como os serializers (que convertem objetos para strings na comunicação cliente-servidor) e os verbos http (GET, POST, PUT, DELETE) que de certa forma também vem por padrão. Não me aprofundei neles durante o readme porque também preciso entender melhor como essas coisas funcionam
 
